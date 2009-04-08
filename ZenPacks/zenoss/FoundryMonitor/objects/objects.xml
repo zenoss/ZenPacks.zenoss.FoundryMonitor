@@ -1,0 +1,2117 @@
+<?xml version="1.0"?>
+<objects>
+<!-- ('', 'zport', 'dmd', 'Devices', 'Network', 'Foundry') -->
+<object id='/zport/dmd/Devices/Network/Foundry' module='Products.ZenModel.DeviceClass' class='DeviceClass'>
+<tomanycont id='rrdTemplates'>
+<object id='Device' module='Products.ZenModel.RRDTemplate' class='RRDTemplate'>
+<property type="text" id="description" mode="w" >
+Template that collects standard metrics for Foundry devices
+</property>
+<property type="string" id="targetPythonClass" mode="w" >
+Products.ZenModel.Device
+</property>
+<tomanycont id='datasources'>
+<object id='snAgGblCpuUtil1MinAvg' module='Products.ZenModel.BasicDataSource' class='BasicDataSource'>
+<property select_variable="sourcetypes" type="selection" id="sourcetype" mode="w" >
+SNMP
+</property>
+<property type="boolean" id="enabled" mode="w" >
+True
+</property>
+<property type="string" id="eventClass" mode="w" >
+/Cmd/Fail
+</property>
+<property type="int" id="severity" mode="w" >
+3
+</property>
+<property type="int" id="cycletime" mode="w" >
+300
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.1.1.2.1.52.0
+</property>
+<property type="boolean" id="usessh" mode="w" >
+False
+</property>
+<property type="string" id="parser" mode="w" >
+Auto
+</property>
+<tomanycont id='datapoints'>
+<object id='snAgGblCpuUtil1MinAvg' module='Products.ZenModel.RRDDataPoint' class='RRDDataPoint'>
+<property select_variable="rrdtypes" type="selection" id="rrdtype" mode="w" >
+GAUGE
+</property>
+<property type="boolean" id="isrow" mode="w" >
+True
+</property>
+</object>
+</tomanycont>
+</object>
+<object id='snAgGblCpuUtil1SecAvg' module='Products.ZenModel.BasicDataSource' class='BasicDataSource'>
+<property select_variable="sourcetypes" type="selection" id="sourcetype" mode="w" >
+SNMP
+</property>
+<property type="boolean" id="enabled" mode="w" >
+True
+</property>
+<property type="string" id="eventClass" mode="w" >
+/Cmd/Fail
+</property>
+<property type="int" id="severity" mode="w" >
+3
+</property>
+<property type="int" id="cycletime" mode="w" >
+300
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.1.1.2.1.50.0
+</property>
+<property type="boolean" id="usessh" mode="w" >
+False
+</property>
+<property type="string" id="parser" mode="w" >
+Auto
+</property>
+<tomanycont id='datapoints'>
+<object id='snAgGblCpuUtil1SecAvg' module='Products.ZenModel.RRDDataPoint' class='RRDDataPoint'>
+<property select_variable="rrdtypes" type="selection" id="rrdtype" mode="w" >
+GAUGE
+</property>
+<property type="boolean" id="isrow" mode="w" >
+True
+</property>
+</object>
+</tomanycont>
+</object>
+<object id='snAgGblCpuUtil5SecAvg' module='Products.ZenModel.BasicDataSource' class='BasicDataSource'>
+<property select_variable="sourcetypes" type="selection" id="sourcetype" mode="w" >
+SNMP
+</property>
+<property type="boolean" id="enabled" mode="w" >
+True
+</property>
+<property type="string" id="eventClass" mode="w" >
+/Cmd/Fail
+</property>
+<property type="int" id="severity" mode="w" >
+3
+</property>
+<property type="int" id="cycletime" mode="w" >
+300
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.1.1.2.1.51.0
+</property>
+<property type="boolean" id="usessh" mode="w" >
+False
+</property>
+<property type="string" id="parser" mode="w" >
+Auto
+</property>
+<tomanycont id='datapoints'>
+<object id='snAgGblCpuUtil5SecAvg' module='Products.ZenModel.RRDDataPoint' class='RRDDataPoint'>
+<property select_variable="rrdtypes" type="selection" id="rrdtype" mode="w" >
+GAUGE
+</property>
+<property type="boolean" id="isrow" mode="w" >
+True
+</property>
+</object>
+</tomanycont>
+</object>
+<object id='snAgGblDynMemTotal' module='Products.ZenModel.BasicDataSource' class='BasicDataSource'>
+<property select_variable="sourcetypes" type="selection" id="sourcetype" mode="w" >
+SNMP
+</property>
+<property type="boolean" id="enabled" mode="w" >
+True
+</property>
+<property type="string" id="eventClass" mode="w" >
+/Cmd/Fail
+</property>
+<property type="int" id="severity" mode="w" >
+3
+</property>
+<property type="int" id="cycletime" mode="w" >
+300
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.1.1.2.1.54.0
+</property>
+<property type="boolean" id="usessh" mode="w" >
+False
+</property>
+<property type="string" id="parser" mode="w" >
+Auto
+</property>
+<tomanycont id='datapoints'>
+<object id='snAgGblDynMemTotal' module='Products.ZenModel.RRDDataPoint' class='RRDDataPoint'>
+<property select_variable="rrdtypes" type="selection" id="rrdtype" mode="w" >
+GAUGE
+</property>
+<property type="boolean" id="isrow" mode="w" >
+True
+</property>
+</object>
+</tomanycont>
+</object>
+<object id='snAgGblDynMemUtil' module='Products.ZenModel.BasicDataSource' class='BasicDataSource'>
+<property select_variable="sourcetypes" type="selection" id="sourcetype" mode="w" >
+SNMP
+</property>
+<property type="boolean" id="enabled" mode="w" >
+True
+</property>
+<property type="string" id="eventClass" mode="w" >
+/Cmd/Fail
+</property>
+<property type="int" id="severity" mode="w" >
+3
+</property>
+<property type="int" id="cycletime" mode="w" >
+300
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.1.1.2.1.53.0
+</property>
+<property type="boolean" id="usessh" mode="w" >
+False
+</property>
+<property type="string" id="parser" mode="w" >
+Auto
+</property>
+<tomanycont id='datapoints'>
+<object id='snAgGblDynMemUtil' module='Products.ZenModel.RRDDataPoint' class='RRDDataPoint'>
+<property select_variable="rrdtypes" type="selection" id="rrdtype" mode="w" >
+GAUGE
+</property>
+<property type="boolean" id="isrow" mode="w" >
+True
+</property>
+</object>
+</tomanycont>
+</object>
+<object id='sysUpTime' module='Products.ZenModel.BasicDataSource' class='BasicDataSource'>
+<property select_variable="sourcetypes" type="selection" id="sourcetype" mode="w" >
+SNMP
+</property>
+<property type="boolean" id="enabled" mode="w" >
+True
+</property>
+<property type="string" id="eventClass" mode="w" >
+/Cmd/Fail
+</property>
+<property type="int" id="severity" mode="w" >
+3
+</property>
+<property type="int" id="cycletime" mode="w" >
+300
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.2.1.1.3.0
+</property>
+<property type="boolean" id="usessh" mode="w" >
+False
+</property>
+<property type="string" id="parser" mode="w" >
+Auto
+</property>
+<tomanycont id='datapoints'>
+<object id='sysUpTime' module='Products.ZenModel.RRDDataPoint' class='RRDDataPoint'>
+<property select_variable="rrdtypes" type="selection" id="rrdtype" mode="w" >
+GAUGE
+</property>
+<property type="boolean" id="isrow" mode="w" >
+True
+</property>
+</object>
+</tomanycont>
+</object>
+</tomanycont>
+<tomanycont id='graphDefs'>
+<object id='CPU Utilization Averages' module='Products.ZenModel.GraphDefinition' class='GraphDefinition'>
+<property type="int" id="height" mode="w" >
+100
+</property>
+<property type="int" id="width" mode="w" >
+500
+</property>
+<property type="string" id="units" mode="w" >
+percent
+</property>
+<property type="boolean" id="log" mode="w" >
+False
+</property>
+<property type="boolean" id="base" mode="w" >
+False
+</property>
+<property type="int" id="miny" mode="w" >
+-1
+</property>
+<property type="int" id="maxy" mode="w" >
+-1
+</property>
+<property type="boolean" id="hasSummary" mode="w" >
+True
+</property>
+<tomanycont id='graphPoints'>
+<object id='snAgGblCpuUtil1MinAvg' module='Products.ZenModel.DataPointGraphPoint' class='DataPointGraphPoint'>
+<property select_variable="lineTypes" type="selection" id="lineType" mode="w" >
+AREA
+</property>
+<property type="long" id="lineWidth" mode="w" >
+1
+</property>
+<property type="boolean" id="stacked" mode="w" >
+False
+</property>
+<property type="string" id="format" mode="w" >
+%5.1lf%s
+</property>
+<property type="string" id="legend" mode="w" >
+1 min.
+</property>
+<property type="long" id="limit" mode="w" >
+-1
+</property>
+<property type="string" id="dpName" mode="w" >
+snAgGblCpuUtil1MinAvg_snAgGblCpuUtil1MinAvg
+</property>
+<property type="string" id="cFunc" mode="w" >
+AVERAGE
+</property>
+</object>
+<object id='snAgGblCpuUtil1SecAvg' module='Products.ZenModel.DataPointGraphPoint' class='DataPointGraphPoint'>
+<property type="long" id="sequence" mode="w" >
+1
+</property>
+<property select_variable="lineTypes" type="selection" id="lineType" mode="w" >
+AREA
+</property>
+<property type="long" id="lineWidth" mode="w" >
+1
+</property>
+<property type="boolean" id="stacked" mode="w" >
+False
+</property>
+<property type="string" id="format" mode="w" >
+%5.1lf%s
+</property>
+<property type="string" id="legend" mode="w" >
+1 sec.
+</property>
+<property type="long" id="limit" mode="w" >
+-1
+</property>
+<property type="string" id="dpName" mode="w" >
+snAgGblCpuUtil1SecAvg_snAgGblCpuUtil1SecAvg
+</property>
+<property type="string" id="cFunc" mode="w" >
+AVERAGE
+</property>
+</object>
+<object id='snAgGblCpuUtil5SecAvg' module='Products.ZenModel.DataPointGraphPoint' class='DataPointGraphPoint'>
+<property type="long" id="sequence" mode="w" >
+2
+</property>
+<property select_variable="lineTypes" type="selection" id="lineType" mode="w" >
+AREA
+</property>
+<property type="long" id="lineWidth" mode="w" >
+1
+</property>
+<property type="boolean" id="stacked" mode="w" >
+False
+</property>
+<property type="string" id="format" mode="w" >
+%5.1lf%s
+</property>
+<property type="string" id="legend" mode="w" >
+5 sec.
+</property>
+<property type="long" id="limit" mode="w" >
+-1
+</property>
+<property type="string" id="dpName" mode="w" >
+snAgGblCpuUtil5SecAvg_snAgGblCpuUtil5SecAvg
+</property>
+<property type="string" id="cFunc" mode="w" >
+AVERAGE
+</property>
+</object>
+</tomanycont>
+</object>
+<object id='Memory Utilization' module='Products.ZenModel.GraphDefinition' class='GraphDefinition'>
+<property type="int" id="height" mode="w" >
+100
+</property>
+<property type="int" id="width" mode="w" >
+500
+</property>
+<property type="string" id="units" mode="w" >
+percent
+</property>
+<property type="boolean" id="log" mode="w" >
+False
+</property>
+<property type="boolean" id="base" mode="w" >
+False
+</property>
+<property type="int" id="miny" mode="w" >
+-1
+</property>
+<property type="int" id="maxy" mode="w" >
+-1
+</property>
+<property type="boolean" id="hasSummary" mode="w" >
+True
+</property>
+<property type="long" id="sequence" mode="w" >
+1
+</property>
+<tomanycont id='graphPoints'>
+<object id='snAgGblDynMemTotal' module='Products.ZenModel.DataPointGraphPoint' class='DataPointGraphPoint'>
+<property type="long" id="sequence" mode="w" >
+1
+</property>
+<property type="string" id="color" mode="w" >
+CCCCCC
+</property>
+<property select_variable="lineTypes" type="selection" id="lineType" mode="w" >
+AREA
+</property>
+<property type="long" id="lineWidth" mode="w" >
+1
+</property>
+<property type="boolean" id="stacked" mode="w" >
+False
+</property>
+<property type="string" id="format" mode="w" >
+%5.1lf%s
+</property>
+<property type="string" id="legend" mode="w" >
+Total
+</property>
+<property type="long" id="limit" mode="w" >
+-1
+</property>
+<property type="string" id="dpName" mode="w" >
+snAgGblDynMemTotal_snAgGblDynMemTotal
+</property>
+<property type="string" id="cFunc" mode="w" >
+AVERAGE
+</property>
+</object>
+<object id='snAgGblDynMemUtil' module='Products.ZenModel.DataPointGraphPoint' class='DataPointGraphPoint'>
+<property select_variable="lineTypes" type="selection" id="lineType" mode="w" >
+AREA
+</property>
+<property type="long" id="lineWidth" mode="w" >
+1
+</property>
+<property type="boolean" id="stacked" mode="w" >
+False
+</property>
+<property type="string" id="format" mode="w" >
+%5.1lf%s
+</property>
+<property type="string" id="legend" mode="w" >
+Dynamic
+</property>
+<property type="long" id="limit" mode="w" >
+-1
+</property>
+<property type="string" id="dpName" mode="w" >
+snAgGblDynMemUtil_snAgGblDynMemUtil
+</property>
+<property type="string" id="cFunc" mode="w" >
+AVERAGE
+</property>
+</object>
+</tomanycont>
+</object>
+</tomanycont>
+</object>
+</tomanycont>
+</object>
+<!-- ('', 'zport', 'dmd', 'Events', 'HW', 'Power', 'instances', 'snTrapChasPwrSupply') -->
+<object id='/zport/dmd/Events/HW/Power/instances/snTrapChasPwrSupply' module='Products.ZenEvents.EventClassInst' class='EventClassInst'>
+<property type="string" id="eventClassKey" mode="w" >
+snTrapChasPwrSupply
+</property>
+<property type="int" id="sequence" mode="w" >
+0
+</property>
+<property visible="True" type="int" id="zEventSeverity" >
+5
+</property>
+</object>
+<!-- ('', 'zport', 'dmd', 'Events', 'HW', 'Power', 'instances', 'snTrapChasPwrSupplyFailed') -->
+<object id='/zport/dmd/Events/HW/Power/instances/snTrapChasPwrSupplyFailed' module='Products.ZenEvents.EventClassInst' class='EventClassInst'>
+<property type="string" id="eventClassKey" mode="w" >
+snTrapChasPwrSupplyFailed
+</property>
+<property type="int" id="sequence" mode="w" >
+0
+</property>
+<property visible="True" type="int" id="zEventSeverity" >
+5
+</property>
+</object>
+<!-- ('', 'zport', 'dmd', 'Mibs', 'mibs', 'FOUNDRY-SN-TRAP-MIB') -->
+<object id='/zport/dmd/Mibs/mibs/FOUNDRY-SN-TRAP-MIB' module='Products.ZenModel.MibModule' class='MibModule'>
+<property type="string" id="language" mode="w" >
+SMIv1
+</property>
+<tomanycont id='notifications'>
+<object id='ospfVirtIfTxRetransmit' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.14
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+An ospfTxRetransmit  trap  signifies  than  an
+OSPF packet has been retransmitted on a virtual
+interface.  All packets that may be retransmit-
+ted  are  associated with an LSDB entry. The LS
+type, LS ID, and Router ID are used to identify
+the LSDB entry.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snOspfVirtIfStatusNeighbor': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfVirtIfStatusAreaID': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfLsdbRouterId': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfLsdbType': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfPacketType': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfLsdbLsId': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfRouterId': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}}
+</property>
+</object>
+<object id='snOspfIfAuthFailure' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.9
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+An ospfIfAuthFailure  trap  signifies  that  a
+packet  has  been received on a non-virtual in-
+terface from a router whose authentication  key
+or  authentication  type  conflicts  with  this
+router's authentication key  or  authentication
+type.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snOspfRouterId': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfPacketType': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfConfigErrorType': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfIfStatusIpAddress': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfPacketSrc': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}}
+</property>
+</object>
+<object id='snOspfIfConfigError' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.7
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+An ospfIfConfigError  trap  signifies  that  a
+packet  has  been received on a non-virtual in-
+terface  from  a  router  whose   configuration
+parameters  conflict  with this router's confi-
+guration parameters.  Note that the  event  op-
+tionMismatch  should  cause  a  trap only if it
+prevents an adjacency from forming.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snOspfRouterId': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfPacketType': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfConfigErrorType': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfIfStatusIpAddress': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfPacketSrc': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}}
+</property>
+</object>
+<object id='snOspfIfRxBadPacket' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.11
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+An ospfIfRxBadPacket trap  signifies  that  an
+OSPF  packet has been received on a non-virtual
+interface that cannot be parsed.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snOspfRouterId': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfPacketSrc': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfIfStatusIpAddress': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfPacketType': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}}
+</property>
+</object>
+<object id='snOspfLsdbApproachingOverflow' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.18
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+An ospfLsdbApproachingOverflow trap  signifies
+that  the  number of LSAs in the router's link-
+state database has exceeded ninety  percent  of
+ospfExtLsdbLimit.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snOspfExtLsdbLimit': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfRouterId': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}}
+</property>
+</object>
+<object id='snOspfLsdbOverflow' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.17
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+An ospfLsdbOverflow trap  signifies  that  the
+number of LSAs in the router's link-state data-
+base has exceeded ospfExtLsdbLimit.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snOspfExtLsdbLimit': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfRouterId': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}}
+</property>
+</object>
+<object id='snOspfMaxAgeLsa' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.16
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+An ospfMaxAgeLsa trap signifies  that  one  of
+the LSA in the router's link-state database has
+aged to MaxAge.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snOspfLsdbLsId': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfRouterId': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfLsdbAreaId': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfLsdbType': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfLsdbRouterId': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}}
+</property>
+</object>
+<object id='snOspfNbrStateChange' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.5
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+An  ospfNbrStateChange  trap  signifies   that
+there  has been a change in the state of a non-
+virtual OSPF neighbor.   This  trap  should  be
+generated  when  the  neighbor  state regresses
+(e.g., goes from Attempt or Full  to  1-Way  or
+Down)  or progresses to a terminal state (e.g.,
+2-Way or Full).  When an  neighbor  transitions
+from  or  to Full on non-broadcast multi-access
+and broadcast networks, the trap should be gen-
+erated  by the designated router.  A designated
+router transitioning to Down will be  noted  by
+ospfIfStateChange.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snOspfRouterId': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfNbrIpAddr': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfNbrRtrId': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfNbrState': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}}
+</property>
+</object>
+<object id='snOspfOriginateLsa' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.15
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+An ospfOriginateLsa trap signifies that a  new
+LSA  has  been originated by this router.  This
+trap should not be invoked for simple refreshes
+of  LSAs  (which happesn every 30 minutes), but
+instead will only be invoked  when  an  LSA  is
+(re)originated due to a topology change.  Addi-
+tionally, this trap does not include LSAs  that
+are  being  flushed  because  they have reached
+MaxAge.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snOspfLsdbLsId': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfRouterId': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfLsdbAreaId': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfLsdbType': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfLsdbRouterId': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}}
+</property>
+</object>
+<object id='snOspfTxRetransmit' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.13
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+An ospfTxRetransmit  trap  signifies  than  an
+OSPF  packet  has  been retransmitted on a non-
+virtual interface.  All packets that may be re-
+transmitted  are associated with an LSDB entry.
+The LS type, LS ID, and Router ID are  used  to
+identify the LSDB entry.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snOspfLsdbRouterId': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfRouterId': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfLsdbType': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfPacketType': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfLsdbLsId': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfNbrRtrId': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfIfStatusIpAddress': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}}
+</property>
+</object>
+<object id='snOspfVirtIfAuthFailure' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.10
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+An ospfVirtIfAuthFailure trap signifies that a
+packet has been received on a virtual interface
+from a router whose authentication key  or  au-
+thentication  type conflicts with this router's
+authentication key or authentication type.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snOspfVirtIfStatusNeighbor': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfRouterId': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfConfigErrorType': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfVirtIfStatusAreaID': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfPacketType': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}}
+</property>
+</object>
+<object id='snOspfVirtIfConfigError' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.8
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+An ospfConfigError trap signifies that a pack-
+et  has  been  received  on a virtual interface
+from a router  whose  configuration  parameters
+conflict   with   this  router's  configuration
+parameters.  Note that the event optionMismatch
+should  cause a trap only if it prevents an ad-
+jacency from forming.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snOspfVirtIfStatusNeighbor': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfRouterId': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfConfigErrorType': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfVirtIfStatusAreaID': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfPacketType': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}}
+</property>
+</object>
+<object id='snOspfVirtIfRxBadPacket' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.12
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+An ospfRxBadPacket trap signifies that an OSPF
+packet has been received on a virtual interface
+that cannot be parsed.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snOspfVirtIfStatusNeighbor': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfRouterId': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfVirtIfStatusAreaID': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfPacketType': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}}
+</property>
+</object>
+<object id='snOspfVirtNbrStateChange' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.6
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+An ospfIfStateChange trap signifies that there
+has  been a change in the state of an OSPF vir-
+tual neighbor.  This trap should  be  generated
+when  the  neighbor state regresses (e.g., goes
+from Attempt or  Full  to  1-Way  or  Down)  or
+progresses to a terminal state (e.g., Full).
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snOspfRouterId': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfVirtNbrArea': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfVirtNbrState': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfVirtNbrRtrId': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}}
+</property>
+</object>
+<object id='snTrapAccessListDeny' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.37
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when a packet was denied
+by an access list.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snAgGblTrapMessage': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}}
+</property>
+</object>
+<object id='snTrapBgpPeerDown' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.66
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when the bgp peer is down.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snAgGblTrapMessage': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}}
+</property>
+</object>
+<object id='snTrapBgpPeerUp' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.65
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when the bgp peer is up.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snAgGblTrapMessage': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}}
+</property>
+</object>
+<object id='snTrapBmWriteSeqDrop' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.64
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when BM write sequence packet is dropped.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snAgGblTrapMessage': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}}
+</property>
+</object>
+<object id='snTrapChasFanFailed' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.31
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when a fan fails
+to operate normally.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snChasFanDescription': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}, 'snChasFanIndex': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}}
+</property>
+</object>
+<object id='snTrapChasPwrSupply' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.1
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when a power supply fails
+to operate normally. The value is a packed bit string;
+the 2 power supplies status are encoded into 4 bits
+(a nibble). 
+The following shows the meaning of each bit:
+(bit 0 is the least significant bit).
+bit position   meaning
+------------   -------
+4-31	 reserved
+3		 Power  Supply 2 DC (0=bad, 1=good).
+2		 Power  Supply 1 DC (0=bad, 1=good).
+1		 Power  Supply 2 present status (0=present, 1=not-present).
+0		 Power  Supply 1 present status (0=present, 1=not-present).
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snChasPwrSupplyStatus': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}}
+</property>
+</object>
+<object id='snTrapChasPwrSupplyFailed' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.30
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when a power supply fails
+to operate normally.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snChasPwrSupplyIndex': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}, 'snChasPwrSupplyDescription': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}}
+</property>
+</object>
+<object id='snTrapDuplicateIp' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.56
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+Duplicate IP address detected.
+</property>
+</object>
+<object id='snTrapFsrpIfStateChange' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.33
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when a FSRP routing device
+changed state from active to standby or vice-versa.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snAgGblTrapMessage': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}}
+</property>
+</object>
+<object id='snTrapIcmpLocalExceedBurst' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.51
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when incoming ICMP exceeds burst-MAX.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snAgGblTrapMessage': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}}
+</property>
+</object>
+<object id='snTrapIcmpTransitExceedBurst' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.52
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when transit ICMP exceeds burst-MAX.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snAgGblTrapMessage': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}}
+</property>
+</object>
+<object id='snTrapL4BecomeActive' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.27
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when the server load
+balancing switch changes state from standby to active.
+</property>
+</object>
+<object id='snTrapL4BecomeStandby' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.26
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when the server load
+balancing switch changes state from active to standby.
+</property>
+</object>
+<object id='snTrapL4ConnectionRateExceedMax' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.71
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when the L4 connection rate exceeds configured maximum.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snAgGblTrapMessage': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}}
+</property>
+</object>
+<object id='snTrapL4ConnectionRateExceedThreshold' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.72
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when the L4 connection rate exceeds 80% of configured maximum
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snAgGblTrapMessage': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}}
+</property>
+</object>
+<object id='snTrapL4ContentVerification' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.55
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when the HTTP match-list pattern
+is found.
+</property>
+</object>
+<object id='snTrapL4FirewallBecomeActive' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.48
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when the server load
+balancing switch Firewall changes state from standby to active.
+</property>
+</object>
+<object id='snTrapL4FirewallBecomeStandby' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.47
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when the server load
+balancing switch Firewall changes state from active to standby.
+</property>
+</object>
+<object id='snTrapL4FirewallPathDown' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.50
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when the server load
+balancing switch Firewall path is down.
+</property>
+</object>
+<object id='snTrapL4FirewallPathUp' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.49
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when the server load
+balancing switch Firewall path is up.
+</property>
+</object>
+<object id='snTrapL4GslbHealthCheckIpDown' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.44
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when GSLB health check for an address transitions
+from active to down state.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snAgGblTrapMessage': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}}
+</property>
+</object>
+<object id='snTrapL4GslbHealthCheckIpPortDown' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.46
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when a given port for a health check address is down.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snAgGblTrapMessage': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}}
+</property>
+</object>
+<object id='snTrapL4GslbHealthCheckIpPortUp' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.45
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when a given port for a health check address is up.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snAgGblTrapMessage': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}}
+</property>
+</object>
+<object id='snTrapL4GslbHealthCheckIpUp' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.43
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when GSLB health check for an address transitions
+from down to active state.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snAgGblTrapMessage': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}}
+</property>
+</object>
+<object id='snTrapL4GslbRemoteControllerDown' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.42
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when the connection to the GSLB SI is down.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snAgGblTrapMessage': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}}
+</property>
+</object>
+<object id='snTrapL4GslbRemoteControllerUp' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.41
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when the connection to the GSLB SI is established.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snAgGblTrapMessage': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}}
+</property>
+</object>
+<object id='snTrapL4GslbRemoteDown' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.40
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when the connection to the remote SI is down.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snAgGblTrapMessage': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}}
+</property>
+</object>
+<object id='snTrapL4GslbRemoteUp' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.39
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when the connection to the remote SI is established.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snAgGblTrapMessage': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}}
+</property>
+</object>
+<object id='snTrapL4MaxSessionLimitReached' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.19
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when the maximum number
+of connections reached.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snL4MaxSessionLimit': {'nodetype': 'object', 'module': 'FOUNDRY-SN-SW-L4-SWITCH-GROUP-MIB'}}
+</property>
+</object>
+<object id='snTrapL4RealServerDown' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.22
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when the load balancing
+real server is down.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snL4TrapRealServerIP': {'nodetype': 'object', 'module': 'FOUNDRY-SN-SW-L4-SWITCH-GROUP-MIB'}, 'snL4TrapRealServerName': {'nodetype': 'object', 'module': 'FOUNDRY-SN-SW-L4-SWITCH-GROUP-MIB'}}
+</property>
+</object>
+<object id='snTrapL4RealServerMaxConnectionLimitReached' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.25
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when the real server reaches
+maximum number of connections.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snL4TrapRealServerIP': {'nodetype': 'object', 'module': 'FOUNDRY-SN-SW-L4-SWITCH-GROUP-MIB'}, 'snL4TrapRealServerCurConnections': {'nodetype': 'object', 'module': 'FOUNDRY-SN-SW-L4-SWITCH-GROUP-MIB'}, 'snL4TrapRealServerName': {'nodetype': 'object', 'module': 'FOUNDRY-SN-SW-L4-SWITCH-GROUP-MIB'}}
+</property>
+</object>
+<object id='snTrapL4RealServerPortDown' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.24
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when the load balancing
+real server TCP port is down.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snL4TrapRealServerIP': {'nodetype': 'object', 'module': 'FOUNDRY-SN-SW-L4-SWITCH-GROUP-MIB'}, 'snL4TrapRealServerName': {'nodetype': 'object', 'module': 'FOUNDRY-SN-SW-L4-SWITCH-GROUP-MIB'}, 'snL4TrapRealServerPort': {'nodetype': 'object', 'module': 'FOUNDRY-SN-SW-L4-SWITCH-GROUP-MIB'}}
+</property>
+</object>
+<object id='snTrapL4RealServerPortUp' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.23
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when the load balancing
+real server TCP port is up.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snL4TrapRealServerIP': {'nodetype': 'object', 'module': 'FOUNDRY-SN-SW-L4-SWITCH-GROUP-MIB'}, 'snL4TrapRealServerName': {'nodetype': 'object', 'module': 'FOUNDRY-SN-SW-L4-SWITCH-GROUP-MIB'}, 'snL4TrapRealServerPort': {'nodetype': 'object', 'module': 'FOUNDRY-SN-SW-L4-SWITCH-GROUP-MIB'}}
+</property>
+</object>
+<object id='snTrapL4RealServerResponseTimeLowerLimit' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.67
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when the real server average response time exceeds lower threshold.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snAgGblTrapMessage': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}}
+</property>
+</object>
+<object id='snTrapL4RealServerResponseTimeUpperLimit' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.68
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when the real server average response time exceeds upper threshold.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snAgGblTrapMessage': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}}
+</property>
+</object>
+<object id='snTrapL4RealServerUp' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.21
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when the load balancing
+real server is up.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snL4TrapRealServerIP': {'nodetype': 'object', 'module': 'FOUNDRY-SN-SW-L4-SWITCH-GROUP-MIB'}, 'snL4TrapRealServerName': {'nodetype': 'object', 'module': 'FOUNDRY-SN-SW-L4-SWITCH-GROUP-MIB'}}
+</property>
+</object>
+<object id='snTrapL4TcpAttackRateExceedMax' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.69
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when the TCP attack rate exceeds configured maximum.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snAgGblTrapMessage': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}}
+</property>
+</object>
+<object id='snTrapL4TcpAttackRateExceedThreshold' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.70
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when the TCP attack rate exceeds 80% of configured maximum.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snAgGblTrapMessage': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}}
+</property>
+</object>
+<object id='snTrapL4TcpSynLimitReached' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.20
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when the number of TCP
+SYN limits reached.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snL4TcpSynLimit': {'nodetype': 'object', 'module': 'FOUNDRY-SN-SW-L4-SWITCH-GROUP-MIB'}}
+</property>
+</object>
+<object id='snTrapLockedAddressViolation' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.2
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when more source MAC addresses
+are received from a port than the maximum number of addresses
+configured to that port.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snSwViolatorMacAddress': {'nodetype': 'object', 'module': 'FOUNDRY-SN-SWITCH-GROUP-MIB'}, 'snSwViolatorPortNumber': {'nodetype': 'object', 'module': 'FOUNDRY-SN-SWITCH-GROUP-MIB'}}
+</property>
+</object>
+<object id='snTrapLockedAddressViolation2' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.32
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when more source MAC addresses
+are received from a port than the maximum number of addresses
+configured to that port.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snAgGblTrapMessage': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}}
+</property>
+</object>
+<object id='snTrapMacFilterDeny' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.38
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when a packet was denied
+by a MAC address filter.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snAgGblTrapMessage': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}}
+</property>
+</object>
+<object id='snTrapMgmtModuleRedunStateChange' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.35
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when the management module
+changes redundancy state.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snAgGblTrapMessage': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}}
+</property>
+</object>
+<object id='snTrapModuleInserted' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.28
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when a module was inserted
+to the chassis during system running.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snAgentBrdIndex': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}}
+</property>
+</object>
+<object id='snTrapModuleRemoved' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.29
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when a module was removed
+from the chassis during system running.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snAgentBrdIndex': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}}
+</property>
+</object>
+<object id='snTrapMplsAudit' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.59
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+MPLS Audit Trap.
+</property>
+</object>
+<object id='snTrapMplsDeveloper' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.60
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+MPLS Developer Trap.
+</property>
+</object>
+<object id='snTrapMplsException' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.58
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+MPLS Exception Detected.
+</property>
+</object>
+<object id='snTrapMplsProblem' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.57
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+MPLS Problem Detected.
+</property>
+</object>
+<object id='snTrapNoBmFreeQueue' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.61
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when no free queue is available in buffer manager.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snAgGblTrapMessage': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}}
+</property>
+</object>
+<object id='snTrapOspfIfStateChange' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.3
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+An ospfIfStateChange trap signifies that there
+has been a change in the state of a non-virtual
+OSPF interface. This trap should  be  generated
+when  the interface state regresses (e.g., goes
+from Dr to Down) or progresses  to  a  terminal
+state  (i.e.,  Point-to-Point, DR Other, Dr, or
+Backup).
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snOspfIfStatusState': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfRouterId': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfIfStatusIpAddress': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}}
+</property>
+</object>
+<object id='snTrapOspfVirtIfStateChange' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.4
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+An ospfIfStateChange trap signifies that there
+has  been a change in the state of an OSPF vir-
+tual interface.
+This trap should be generated when  the  inter-
+face  state  regresses  (e.g., goes from Point-
+to-Point to Down) or progresses to  a  terminal
+state (i.e., Point-to-Point).
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snOspfVirtIfStatusNeighbor': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfRouterId': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfVirtIfStatusAreaID': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}, 'snOspfVirtIfStatusState': {'nodetype': 'object', 'module': 'FOUNDRY-SN-OSPF-GROUP-MIB'}}
+</property>
+</object>
+<object id='snTrapPortSecurityShutdown' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.78
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when insecure MAC addresses
+are received from a port caused the port to shutdown.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snAgGblTrapMessage': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}}
+</property>
+</object>
+<object id='snTrapPortSecurityViolation' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.77
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when insecure MAC addresses
+are received from a port with MAC security feature enabled.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snAgGblTrapMessage': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}}
+</property>
+</object>
+<object id='snTrapRunningConfigChanged' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.73
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when the running configuration
+was changed.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snAgGblTrapMessage': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}}
+</property>
+</object>
+<object id='snTrapSmcBpDrop' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.63
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when SMC BackPlane packet is dropped.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snAgGblTrapMessage': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}}
+</property>
+</object>
+<object id='snTrapSmcDmaDrop' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.62
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when SMC DMA packet is dropped.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snAgGblTrapMessage': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}}
+</property>
+</object>
+<object id='snTrapStartupConfigChanged' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.74
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when the startup configuration
+was changed.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snAgGblTrapMessage': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}}
+</property>
+</object>
+<object id='snTrapTcpLocalExceedBurst' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.53
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when incoming TCP SYN exceeds burst-MAX.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snAgGblTrapMessage': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}}
+</property>
+</object>
+<object id='snTrapTcpTransitExceedBurst' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.54
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when transit TCP exceeds burst-MAX.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snAgGblTrapMessage': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}}
+</property>
+</object>
+<object id='snTrapTemperatureWarning' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.36
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when the actual temperature
+reading is above the warning temperature threshold.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snAgGblTrapMessage': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}}
+</property>
+</object>
+<object id='snTrapUserLogin' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.75
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when user login.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snAgGblTrapMessage': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}}
+</property>
+</object>
+<object id='snTrapUserLogout' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.76
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when user logout.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snAgGblTrapMessage': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}}
+</property>
+</object>
+<object id='snTrapVrrpIfStateChange' module='Products.ZenModel.MibNotification' class='MibNotification'>
+<property type="string" id="moduleName" mode="w" >
+FOUNDRY-SN-TRAP-MIB
+</property>
+<property type="string" id="nodetype" mode="w" >
+notification
+</property>
+<property type="string" id="oid" mode="w" >
+1.3.6.1.4.1.1991.0.34
+</property>
+<property type="string" id="status" mode="w" >
+current
+</property>
+<property type="string" id="description" mode="w" >
+The SNMP trap that is generated when a VRRP routing device
+changed state from master to backup or vice-versa.
+</property>
+<property type="lines" id="objects" mode="w" >
+{'snAgGblTrapMessage': {'nodetype': 'object', 'module': 'FOUNDRY-SN-AGENT-MIB'}}
+</property>
+</object>
+</tomanycont>
+</object>
+</objects>

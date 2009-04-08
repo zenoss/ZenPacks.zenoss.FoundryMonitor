@@ -1,0 +1,3 @@
+[zenoss.zenpacks]
+ZenPacks.zenoss.FoundryMonitor = ZenPacks.zenoss.FoundryMonitor
+
