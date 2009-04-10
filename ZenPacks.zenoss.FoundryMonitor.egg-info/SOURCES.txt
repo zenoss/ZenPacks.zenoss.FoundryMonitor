@@ -1,3 +1,4 @@
+INSTALL.txt
 MANIFEST.in
 README.txt
 setup.py
@@ -21,11 +22,11 @@ ZenPacks/zenoss/FoundryMonitor/modeler/__init__.py
 ZenPacks/zenoss/FoundryMonitor/modeler/__init__.pyc
 ZenPacks/zenoss/FoundryMonitor/modeler/plugins/__init__.py
 ZenPacks/zenoss/FoundryMonitor/modeler/plugins/__init__.pyc
-ZenPacks/zenoss/FoundryMonitor/modeler/plugins/Foundry/.DeviceMap.py.swp
 ZenPacks/zenoss/FoundryMonitor/modeler/plugins/Foundry/DeviceMap.py
 ZenPacks/zenoss/FoundryMonitor/modeler/plugins/Foundry/DeviceMap.pyc
 ZenPacks/zenoss/FoundryMonitor/modeler/plugins/Foundry/__init__.py
 ZenPacks/zenoss/FoundryMonitor/modeler/plugins/Foundry/__init__.pyc
 ZenPacks/zenoss/FoundryMonitor/objects/objects.xml
+ZenPacks/zenoss/FoundryMonitor/objects/objects.xml.bak
 ZenPacks/zenoss/FoundryMonitor/skins/ZenPacks.zenoss.FoundryMonitor/placeholder.txt
 ZenPacks/zenoss/FoundryMonitor/tests/__init__.py
