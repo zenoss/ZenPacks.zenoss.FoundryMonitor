@@ -2,6 +2,9 @@
 <objects>
 <!-- ('', 'zport', 'dmd', 'Devices', 'Network', 'Foundry') -->
 <object id='/zport/dmd/Devices/Network/Foundry' module='Products.ZenModel.DeviceClass' class='DeviceClass'>
+<property type="lines" id="devtypes" mode="w" >
+[('Foundry', 'SNMP')]
+</property>
 <property visible="True" type="lines" id="zCollectorPlugins" >
 ['zenoss.snmp.NewDeviceMap', 'zenoss.snmp.DeviceMap', 'Foundry.DeviceMap', 'zenoss.snmp.InterfaceMap', 'zenoss.snmp.RouteMap']
 </property>
