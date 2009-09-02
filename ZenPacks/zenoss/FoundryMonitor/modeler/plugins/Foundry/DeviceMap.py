@@ -4,6 +4,10 @@
 #
 ##########################################################################
 
+__doc__ = """DeviceMap
+Use the Foundry devices MIB to get hw and os products.
+"""
+
 from Products.DataCollector.plugins.CollectorPlugin import SnmpPlugin, GetMap
 from Products.DataCollector.plugins.DataMaps \
     import MultiArgs, ObjectMap, RelationshipMap
