@@ -1,8 +1,12 @@
-##########################################################################
-#
-#   Copyright 2008, 2009 Zenoss, Inc. All Rights Reserved.
-#
-##########################################################################
+##############################################################################
+# 
+# Copyright (C) Zenoss, Inc. 2008, 2009, all rights reserved.
+# 
+# This content is made available according to terms specified in
+# License.zenoss under the directory where your Zenoss product is installed.
+# 
+##############################################################################
+
 
 __doc__ = """DeviceMap
 Use the Foundry devices MIB to get hw and os products.
@@ -99,4 +103,4 @@ class DeviceMap(SnmpPlugin):
         if getdata['hwProdKey']:
             om.setHWProductKey = MultiArgs(getdata['hwProdKey'], self.foundryName) 
         maps.append(om)
-        return maps 
+        return maps
