@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map
+  PUBLIC "urn:pubid:zenoss.com:doctypes:dita:dtd:map" "map.dtd">
+<map>
+   <title>FoundryMonitor</title>
+   <topicref href="topics/FoundryMonitor.dita">
+      <topicref href="topics/prerequisites.dita"/>
+      <topicref href="topics/FoundryMonitor_task-Configuring.dita"/>
+      <topicref href="topics/FoundryMonitor_ref-Daemons.dita"/>
+   </topicref>
+</map>

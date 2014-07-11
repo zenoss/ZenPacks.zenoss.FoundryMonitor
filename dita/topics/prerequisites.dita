@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "urn:pubid:zenoss.com:doctypes:dita:dtd:reference" "reference.dtd">
+<reference id="referenceid">
+  <title>Prerequisites</title>
+  <refbody>
+    <section>
+      <table>
+      <tgroup cols="2">
+        <thead>
+          <row>
+            <entry>Prerequisite</entry>
+            <entry>Restriction</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>Product</entry>
+            <entry><ph conkeyref="names/platform"/> 4.x</entry>
+          </row>
+          <row>
+            <entry>Required ZenPacks</entry>
+            <entry>ZenPacks.zenoss.FoundryMonitor</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    </section>
+  </refbody>
+</reference>

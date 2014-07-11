@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "urn:pubid:zenoss.com:doctypes:dita:dtd:reference" "reference.dtd">
+<reference id="referenceid">
+  <title>(FoundryMonitor) Foundry Networks Devices</title>
+  <shortdesc>The <zenpack>ZenPacks.zenoss.FoundryMonitor</zenpack> ZenPack monitors networking devices built by Foundry Networks (now Brocade
+    Communication Systems).</shortdesc>
+  <refbody>
+    <section>
+      <note>This ZenPack is not installed when <ph conkeyref="names/platform"/>
+      is installed. To download it, visit <ph conkeyref="names/support-site"/>.</note>
+      <p>This ZenPack models specific details on Foundry devices, including:</p><ul>
+          <li>
+            <p>DRAM</p>
+          </li>
+          
+          <li>
+            <p>Serial Number</p>
+          </li>
+          
+          <li>
+            <p>Processor</p>
+          </li>
+          
+          <li>
+            <p>Product type</p>
+          </li>
+        </ul><p>This ZenPack monitors memory utilization, as well as CPU utilization
+          averages for 1 minute, 1 second, and 5 seconds.</p><p>It also includes all Foundry traps to ensure proper decoding of
+            those traps through <codeph outputclass="code">zentrap</codeph>.</p>
+    </section>
+  </refbody>
+</reference>
